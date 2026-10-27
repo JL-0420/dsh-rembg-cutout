@@ -1,0 +1,6 @@
+# npm / 市场安装后的自注册入口。本地开发（file: 或 --patch）不走这里。
+- insert:
+    - id: rembg-cutout
+      name: dsh-rembg-cutout
+      config:
+        defaultModel: u2netp

@@ -1,0 +1,59 @@
+{
+  "name": "dsh-rembg-cutout",
+  "version": "0.1.0",
+  "description": "DSH 本地抠图插件：u2net/u2netp 把图片主体抠成透明 PNG，可顺手裁到主体外框；另带自动裁白边工具。纯本地、零费用、断网可用。 | Local background removal for DeepSeek Harness: u2net/u2netp cutout to transparent PNG, with subject bounding-box crop and border trim. No cloud, no cost.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "image",
+    "background-removal",
+    "remove-background",
+    "cutout",
+    "matting",
+    "u2net",
+    "rembg",
+    "抠图",
+    "抠主体",
+    "去背景",
+    "透明背景"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "JL-0420",
+    "email": "1632938794@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JL-0420/dsh-rembg-cutout.git"
+  },
+  "homepage": "https://github.com/JL-0420/dsh-rembg-cutout#readme",
+  "bugs": {
+    "url": "https://github.com/JL-0420/dsh-rembg-cutout/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "py/cutout.py",
+    "py/trim.py",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "meta": {
+    "title": "本地抠图",
+    "description": "把图片主体抠成透明 PNG（u2net/u2netp），可自动裁到主体外框；附带裁白边工具。"
+  }
+}
